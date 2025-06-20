@@ -1,0 +1,21 @@
+{
+  "name": "emacs-keybindings",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "generate-toml": "node scripts/generate-toml.js",
+    "build-standalone": "npm run build && node scripts/build-standalone.js"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^3.0.0",
+    "svelte": "^4.2.0",
+    "vite": "^5.0.0"
+  },
+  "dependencies": {
+    "@iarna/toml": "^2.2.5"
+  }
+}

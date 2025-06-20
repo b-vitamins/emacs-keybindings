@@ -1,0 +1,3492 @@
+# Emacs Keybindings Configuration
+# Total: 427 keybindings from 21 configuration files
+# Categories: core, movement, editing, buffer, window, file, search, custom
+# Levels: white, yellow, orange, green, blue, brown, black, red
+
+# Core Movement
+[[keybindings]]
+key = "C-a"
+function = "beginning-of-line"
+description = "Move cursor to beginning of current line"
+category = "movement"
+level = "white"
+source = "core-emacs"
+
+[[keybindings]]
+key = "C-e"
+function = "end-of-line"
+description = "Move cursor to end of current line"
+category = "movement"
+level = "white"
+source = "core-emacs"
+
+[[keybindings]]
+key = "C-f"
+function = "forward-char"
+description = "Move cursor forward one character"
+category = "movement"
+level = "white"
+source = "core-emacs"
+
+[[keybindings]]
+key = "C-b"
+function = "backward-char"
+description = "Move cursor backward one character"
+category = "movement"
+level = "white"
+source = "core-emacs"
+
+[[keybindings]]
+key = "C-n"
+function = "next-line"
+description = "Move cursor to next line"
+category = "movement"
+level = "white"
+source = "core-emacs"
+
+[[keybindings]]
+key = "C-p"
+function = "previous-line"
+description = "Move cursor to previous line"
+category = "movement"
+level = "white"
+source = "core-emacs"
+
+[[keybindings]]
+key = "M-f"
+function = "forward-word"
+description = "Move cursor forward one word"
+category = "movement"
+level = "white"
+source = "core-emacs"
+
+[[keybindings]]
+key = "M-b"
+function = "backward-word"
+description = "Move cursor backward one word"
+category = "movement"
+level = "white"
+source = "core-emacs"
+
+[[keybindings]]
+key = "M-<"
+function = "beginning-of-buffer"
+description = "Move cursor to beginning of buffer"
+category = "movement"
+level = "white"
+source = "core-emacs"
+
+[[keybindings]]
+key = "M->"
+function = "end-of-buffer"
+description = "Move cursor to end of buffer"
+category = "movement"
+level = "white"
+source = "core-emacs"
+
+[[keybindings]]
+key = "M-g g"
+function = "goto-line"
+description = "Go to specific line number"
+category = "movement"
+level = "yellow"
+source = "core-emacs"
+
+# Core Editing
+[[keybindings]]
+key = "C-d"
+function = "delete-char"
+description = "Delete character at cursor"
+category = "editing"
+level = "white"
+source = "core-emacs"
+
+[[keybindings]]
+key = "DEL"
+function = "delete-backward-char"
+description = "Delete character before cursor (backspace)"
+category = "editing"
+level = "white"
+source = "core-emacs"
+
+[[keybindings]]
+key = "M-d"
+function = "kill-word"
+description = "Kill from cursor to end of word"
+category = "editing"
+level = "white"
+source = "core-emacs"
+
+[[keybindings]]
+key = "M-DEL"
+function = "backward-kill-word"
+description = "Kill from cursor to beginning of word"
+category = "editing"
+level = "white"
+source = "core-emacs"
+
+[[keybindings]]
+key = "C-k"
+function = "kill-line"
+description = "Kill from cursor to end of line"
+category = "editing"
+level = "white"
+source = "core-emacs"
+
+[[keybindings]]
+key = "C-w"
+function = "kill-region"
+description = "Kill (cut) selected region"
+category = "editing"
+level = "white"
+source = "core-emacs"
+
+[[keybindings]]
+key = "M-w"
+function = "kill-ring-save"
+description = "Copy selected region to kill ring"
+category = "editing"
+level = "white"
+source = "core-emacs"
+
+[[keybindings]]
+key = "C-y"
+function = "yank"
+description = "Paste (yank) from kill ring"
+category = "editing"
+level = "white"
+source = "core-emacs"
+
+[[keybindings]]
+key = "M-y"
+function = "yank-pop"
+description = "Cycle through kill ring (after C-y)"
+category = "editing"
+level = "yellow"
+source = "core-emacs"
+
+[[keybindings]]
+key = "C-/"
+function = "undo"
+description = "Undo last action"
+category = "editing"
+level = "white"
+source = "core-emacs"
+
+# Buffer Operations
+[[keybindings]]
+key = "C-x b"
+function = "switch-to-buffer"
+description = "Switch to another buffer"
+category = "buffer"
+level = "yellow"
+source = "core-emacs"
+
+[[keybindings]]
+key = "C-x C-b"
+function = "list-buffers"
+description = "List all open buffers"
+category = "buffer"
+level = "yellow"
+source = "core-emacs"
+
+[[keybindings]]
+key = "C-x k"
+function = "kill-buffer"
+description = "Kill (close) current or specified buffer"
+category = "buffer"
+level = "yellow"
+source = "core-emacs"
+
+# File Operations
+[[keybindings]]
+key = "C-x C-f"
+function = "find-file"
+description = "Open/find a file"
+category = "file"
+level = "white"
+source = "core-emacs"
+
+[[keybindings]]
+key = "C-x C-s"
+function = "save-buffer"
+description = "Save current buffer to file"
+category = "file"
+level = "white"
+source = "core-emacs"
+
+[[keybindings]]
+key = "C-x C-w"
+function = "write-file"
+description = "Save buffer with new name (save as)"
+category = "file"
+level = "yellow"
+source = "core-emacs"
+
+# Window Operations
+[[keybindings]]
+key = "C-x 0"
+function = "delete-window"
+description = "Delete current window"
+category = "window"
+level = "orange"
+source = "core-emacs"
+
+[[keybindings]]
+key = "C-x 1"
+function = "delete-other-windows"
+description = "Delete all windows except current"
+category = "window"
+level = "orange"
+source = "core-emacs"
+
+[[keybindings]]
+key = "C-x 2"
+function = "split-window-below"
+description = "Split window horizontally (below)"
+category = "window"
+level = "orange"
+source = "core-emacs"
+
+[[keybindings]]
+key = "C-x 3"
+function = "split-window-right"
+description = "Split window vertically (right)"
+category = "window"
+level = "orange"
+source = "core-emacs"
+
+[[keybindings]]
+key = "C-x o"
+function = "other-window"
+description = "Switch to next window"
+category = "window"
+level = "orange"
+source = "core-emacs"
+
+# Search Operations
+[[keybindings]]
+key = "C-s"
+function = "isearch-forward"
+description = "Incremental search forward"
+category = "search"
+level = "white"
+source = "core-emacs"
+
+[[keybindings]]
+key = "C-r"
+function = "isearch-backward"
+description = "Incremental search backward"
+category = "search"
+level = "white"
+source = "core-emacs"
+
+# Core System
+[[keybindings]]
+key = "C-g"
+function = "keyboard-quit"
+description = "Cancel current command/operation"
+category = "core"
+level = "white"
+source = "core-emacs"
+
+[[keybindings]]
+key = "C-x C-c"
+function = "save-buffers-kill-terminal"
+description = "Exit Emacs (with save prompt)"
+category = "core"
+level = "white"
+source = "core-emacs"
+
+# YOUR CUSTOM PREFIX MAPS
+[[keybindings]]
+key = "C-c a"
+function = "bv-app-map"
+description = "Your custom application command prefix map"
+category = "custom"
+level = "yellow"
+source = "bv-defaults.el"
+
+[[keybindings]]
+key = "C-c t"
+function = "bv-toggle-map"
+description = "Your custom toggle functionality prefix map"
+category = "custom"
+level = "yellow"
+source = "bv-defaults.el"
+
+[[keybindings]]
+key = "C-c b"
+function = "bv-buffer-map"
+description = "Your custom buffer operations prefix map"
+category = "custom"
+level = "yellow"
+source = "bv-defaults.el"
+
+[[keybindings]]
+key = "C-c w"
+function = "bv-window-map"
+description = "Your custom window operations prefix map"
+category = "custom"
+level = "yellow"
+source = "bv-defaults.el"
+
+# CUSTOM BUFFER OPERATIONS
+[[keybindings]]
+key = "C-c b p"
+function = "bv-switch-to-previous-buffer"
+description = "Switch to the previous buffer (your custom)"
+category = "buffer"
+level = "yellow"
+source = "bv-defaults.el"
+
+[[keybindings]]
+key = "C-c b k"
+function = "kill-current-buffer"
+description = "Kill current buffer via buffer map"
+category = "buffer"
+level = "yellow"
+source = "bv-defaults.el"
+
+[[keybindings]]
+key = "C-c b r"
+function = "revert-buffer"
+description = "Revert buffer to saved state"
+category = "buffer"
+level = "yellow"
+source = "bv-defaults.el"
+
+# CUSTOM WINDOW OPERATIONS
+[[keybindings]]
+key = "C-c w s"
+function = "split-window-below"
+description = "Split window horizontally via window map"
+category = "window"
+level = "orange"
+source = "bv-defaults.el"
+
+[[keybindings]]
+key = "C-c w v"
+function = "split-window-right"
+description = "Split window vertically via window map"
+category = "window"
+level = "orange"
+source = "bv-defaults.el"
+
+[[keybindings]]
+key = "C-c w d"
+function = "delete-window"
+description = "Delete current window via window map"
+category = "window"
+level = "orange"
+source = "bv-defaults.el"
+
+[[keybindings]]
+key = "C-c w D"
+function = "delete-other-windows"
+description = "Delete all other windows"
+category = "window"
+level = "orange"
+source = "bv-defaults.el"
+
+[[keybindings]]
+key = "C-c w b"
+function = "balance-windows"
+description = "Balance window sizes"
+category = "window"
+level = "orange"
+source = "bv-defaults.el"
+
+# CUSTOM GLOBAL BINDINGS
+[[keybindings]]
+key = "C-w"
+function = "bv-kill-region-or-backward-word"
+description = "Kill region if active, otherwise kill word backward (your custom)"
+category = "editing"
+level = "yellow"
+source = "bv-defaults.el"
+
+[[keybindings]]
+key = "M-/"
+function = "hippie-expand"
+description = "Intelligent expansion (better than dabbrev-expand)"
+category = "editing"
+level = "yellow"
+source = "bv-defaults.el"
+
+[[keybindings]]
+key = "C-="
+function = "er/expand-region"
+description = "Expand selection intelligently"
+category = "editing"
+level = "green"
+source = "bv-defaults.el"
+
+[[keybindings]]
+key = "M-c"
+function = "capitalize-dwim"
+description = "Capitalize word intelligently"
+category = "editing"
+level = "yellow"
+source = "bv-defaults.el"
+
+[[keybindings]]
+key = "M-l"
+function = "downcase-dwim"
+description = "Downcase word intelligently"
+category = "editing"
+level = "yellow"
+source = "bv-defaults.el"
+
+[[keybindings]]
+key = "M-u"
+function = "upcase-dwim"
+description = "Upcase word intelligently"
+category = "editing"
+level = "yellow"
+source = "bv-defaults.el"
+
+# BETTER DEFAULTS - REMAPPED CORE
+[[keybindings]]
+key = "C-x k"
+function = "kill-current-buffer"
+description = "Kill current buffer without prompt (your improvement)"
+category = "buffer"
+level = "yellow"
+source = "bv-defaults.el"
+
+[[keybindings]]
+key = "C-x C-b"
+function = "ibuffer"
+description = "Enhanced buffer list (your improvement)"
+category = "buffer"
+level = "yellow"
+source = "bv-defaults.el"
+
+[[keybindings]]
+key = "C-<tab>"
+function = "other-window"
+description = "Switch to next window (your binding)"
+category = "window"
+level = "orange"
+source = "bv-defaults.el"
+
+# HELP SYSTEM IMPROVEMENTS
+[[keybindings]]
+key = "C-h K"
+function = "describe-keymap"
+description = "Describe keymap (your addition)"
+category = "core"
+level = "green"
+source = "bv-defaults.el"
+
+[[keybindings]]
+key = "C-h f"
+function = "helpful-callable"
+description = "Better describe function (helpful package)"
+category = "core"
+level = "green"
+source = "bv-defaults.el"
+
+[[keybindings]]
+key = "C-h v"
+function = "helpful-variable"
+description = "Better describe variable (helpful package)"
+category = "core"
+level = "green"
+source = "bv-defaults.el"
+
+[[keybindings]]
+key = "C-h k"
+function = "helpful-key"
+description = "Better describe key (helpful package)"
+category = "core"
+level = "green"
+source = "bv-defaults.el"
+
+[[keybindings]]
+key = "C-h F"
+function = "helpful-function"
+description = "Better describe function (strict)"
+category = "core"
+level = "green"
+source = "bv-defaults.el"
+
+# UI TOGGLE SYSTEM
+[[keybindings]]
+key = "C-c t t"
+function = "bv-ui-toggle-theme"
+description = "Toggle between light and dark themes"
+category = "custom"
+level = "blue"
+source = "bv-ui.el"
+
+[[keybindings]]
+key = "C-c t T"
+function = "bv-ui-toggle-auto-switch"
+description = "Toggle automatic theme switching based on time"
+category = "custom"
+level = "blue"
+source = "bv-ui.el"
+
+[[keybindings]]
+key = "C-c t h"
+function = "bv-ui-toggle-header-line-mode"
+description = "Toggle between header line and mode line"
+category = "custom"
+level = "blue"
+source = "bv-ui.el"
+
+[[keybindings]]
+key = "C-c t d"
+function = "bv-ui-toggle-frame-decorations"
+description = "Toggle frame decorations (title bar)"
+category = "custom"
+level = "blue"
+source = "bv-ui.el"
+
+# DISABLED KEYS
+[[keybindings]]
+key = "C-z"
+function = "disabled"
+description = "Suspend frame (DISABLED to prevent accidents)"
+category = "core"
+level = "yellow"
+source = "bv-defaults.el"
+
+[[keybindings]]
+key = "C-x C-z"
+function = "disabled"
+description = "Suspend frame (DISABLED to prevent accidents)"
+category = "core"
+level = "yellow"
+source = "bv-defaults.el"
+
+# MAJOR COMPLETION SYSTEM REMAPPINGS
+[[keybindings]]
+key = "C-s"
+function = "consult-line"
+description = "🔥 REMAPPED: Enhanced buffer search with live preview (was isearch-forward)"
+category = "search"
+level = "blue"
+source = "bv-completion.el"
+
+[[keybindings]]
+key = "C-x b"
+function = "consult-buffer"
+description = "🔥 REMAPPED: Enhanced buffer switching with fuzzy matching (was switch-to-buffer)"
+category = "buffer"
+level = "blue"
+source = "bv-completion.el"
+
+[[keybindings]]
+key = "M-g g"
+function = "consult-goto-line"
+description = "🔥 REMAPPED: Enhanced goto line with live preview (was goto-line)"
+category = "movement"
+level = "blue"
+source = "bv-completion.el"
+
+[[keybindings]]
+key = "M-g i"
+function = "consult-imenu"
+description = "🔥 REMAPPED: Enhanced imenu with fuzzy search (was imenu)"
+category = "movement"
+level = "blue"
+source = "bv-completion.el"
+
+[[keybindings]]
+key = "M-y"
+function = "consult-yank-pop"
+description = "🔥 REMAPPED: Enhanced kill ring browser with preview (was yank-pop)"
+category = "editing"
+level = "blue"
+source = "bv-completion.el"
+
+# CONSULT COMMAND SUITE - C-c PREFIX
+[[keybindings]]
+key = "C-c M-x"
+function = "consult-mode-command"
+description = "Enhanced M-x for current mode commands"
+category = "custom"
+level = "blue"
+source = "bv-completion.el"
+
+[[keybindings]]
+key = "C-c h"
+function = "consult-history"
+description = "Browse minibuffer/command history"
+category = "custom"
+level = "blue"
+source = "bv-completion.el"
+
+[[keybindings]]
+key = "C-c k"
+function = "consult-kmacro"
+description = "Enhanced keyboard macro management"
+category = "custom"
+level = "blue"
+source = "bv-completion.el"
+
+[[keybindings]]
+key = "C-c m"
+function = "consult-man"
+description = "Enhanced man page browser"
+category = "custom"
+level = "blue"
+source = "bv-completion.el"
+
+[[keybindings]]
+key = "C-c i"
+function = "consult-info"
+description = "Enhanced Info node browser"
+category = "custom"
+level = "blue"
+source = "bv-completion.el"
+
+# CONSULT BUFFER OPERATIONS - C-x PREFIX
+[[keybindings]]
+key = "C-x M-:"
+function = "consult-complex-command"
+description = "Enhanced repeat complex command"
+category = "buffer"
+level = "blue"
+source = "bv-completion.el"
+
+[[keybindings]]
+key = "C-x 4 b"
+function = "consult-buffer-other-window"
+description = "Enhanced buffer switching in other window"
+category = "buffer"
+level = "blue"
+source = "bv-completion.el"
+
+[[keybindings]]
+key = "C-x 5 b"
+function = "consult-buffer-other-frame"
+description = "Enhanced buffer switching in other frame"
+category = "buffer"
+level = "blue"
+source = "bv-completion.el"
+
+[[keybindings]]
+key = "C-x r b"
+function = "consult-bookmark"
+description = "Enhanced bookmark browser"
+category = "file"
+level = "blue"
+source = "bv-completion.el"
+
+[[keybindings]]
+key = "C-x C-r"
+function = "consult-recent-file"
+description = "Enhanced recent files browser"
+category = "file"
+level = "blue"
+source = "bv-completion.el"
+
+# REGISTERS AND MARKS
+[[keybindings]]
+key = "M-#"
+function = "consult-register-load"
+description = "Load from register with preview"
+category = "editing"
+level = "green"
+source = "bv-completion.el"
+
+[[keybindings]]
+key = "M-'"
+function = "consult-register-store"
+description = "Store to register"
+category = "editing"
+level = "green"
+source = "bv-completion.el"
+
+[[keybindings]]
+key = "C-M-#"
+function = "consult-register"
+description = "Enhanced register browser"
+category = "editing"
+level = "green"
+source = "bv-completion.el"
+
+# ADVANCED NAVIGATION - M-g PREFIX
+[[keybindings]]
+key = "M-g e"
+function = "consult-compile-error"
+description = "Navigate compilation errors with preview"
+category = "movement"
+level = "green"
+source = "bv-completion.el"
+
+[[keybindings]]
+key = "M-g k"
+function = "consult-global-mark"
+description = "Navigate global mark ring"
+category = "movement"
+level = "green"
+source = "bv-completion.el"
+
+[[keybindings]]
+key = "M-g I"
+function = "consult-imenu-multi"
+description = "Imenu across multiple buffers"
+category = "movement"
+level = "green"
+source = "bv-completion.el"
+
+# POWERFUL SEARCH SUITE - M-s PREFIX
+[[keybindings]]
+key = "M-s d"
+function = "consult-find"
+description = "Find files by name with preview"
+category = "search"
+level = "blue"
+source = "bv-completion.el"
+
+[[keybindings]]
+key = "M-s D"
+function = "consult-locate"
+description = "Locate files using system database"
+category = "search"
+level = "blue"
+source = "bv-completion.el"
+
+[[keybindings]]
+key = "M-s g"
+function = "smart-grep"
+description = "Smart grep (ripgrep if available, else grep)"
+category = "search"
+level = "blue"
+source = "bv-completion.el"
+
+[[keybindings]]
+key = "M-s G"
+function = "consult-git-grep"
+description = "Git grep with live preview"
+category = "search"
+level = "blue"
+source = "bv-completion.el"
+
+[[keybindings]]
+key = "M-s r"
+function = "consult-ripgrep"
+description = "Lightning-fast ripgrep with live preview"
+category = "search"
+level = "blue"
+source = "bv-completion.el"
+
+[[keybindings]]
+key = "M-s L"
+function = "consult-line-multi"
+description = "Search lines across multiple buffers"
+category = "search"
+level = "blue"
+source = "bv-completion.el"
+
+[[keybindings]]
+key = "M-s k"
+function = "consult-keep-lines"
+description = "Keep matching lines (like grep -v inverse)"
+category = "search"
+level = "green"
+source = "bv-completion.el"
+
+[[keybindings]]
+key = "M-s u"
+function = "consult-focus-lines"
+description = "Focus on matching lines, hide others"
+category = "search"
+level = "green"
+source = "bv-completion.el"
+
+[[keybindings]]
+key = "M-s m"
+function = "consult-mark"
+description = "Navigate mark ring with preview"
+category = "search"
+level = "green"
+source = "bv-completion.el"
+
+[[keybindings]]
+key = "M-s o"
+function = "consult-outline"
+description = "Navigate document outline"
+category = "search"
+level = "green"
+source = "bv-completion.el"
+
+[[keybindings]]
+key = "M-s f"
+function = "consult-flymake"
+description = "Navigate flymake diagnostics"
+category = "search"
+level = "green"
+source = "bv-completion.el"
+
+[[keybindings]]
+key = "M-s e"
+function = "consult-isearch-history"
+description = "Browse and reuse isearch history"
+category = "search"
+level = "green"
+source = "bv-completion.el"
+
+# EMBARK CONTEXTUAL ACTIONS
+[[keybindings]]
+key = "C-."
+function = "embark-act"
+description = "🔥 Contextual actions menu - act on thing at point"
+category = "custom"
+level = "blue"
+source = "bv-completion.el"
+
+[[keybindings]]
+key = "C-;"
+function = "embark-dwim"
+description = "🔥 Do What I Mean - smart default action"
+category = "custom"
+level = "blue"
+source = "bv-completion.el"
+
+[[keybindings]]
+key = "C-h B"
+function = "embark-bindings"
+description = "Show embark bindings help"
+category = "core"
+level = "blue"
+source = "bv-completion.el"
+
+# VERTICO REPEAT
+[[keybindings]]
+key = "M-R"
+function = "vertico-repeat"
+description = "Repeat last minibuffer session"
+category = "custom"
+level = "green"
+source = "bv-completion.el"
+
+# MARGINALIA
+[[keybindings]]
+key = "M-A"
+function = "bv-marginalia-cycle"
+description = "Cycle completion annotation levels"
+category = "custom"
+level = "green"
+source = "bv-completion.el"
+
+# CAPE COMPLETION AT POINT - C-c p PREFIX
+[[keybindings]]
+key = "C-c p p"
+function = "completion-at-point"
+description = "Manual completion at point"
+category = "custom"
+level = "green"
+source = "bv-completion.el"
+
+[[keybindings]]
+key = "C-c p d"
+function = "cape-dabbrev"
+description = "Dynamic abbreviation completion"
+category = "custom"
+level = "green"
+source = "bv-completion.el"
+
+[[keybindings]]
+key = "C-c p h"
+function = "cape-history"
+description = "Complete from input history"
+category = "custom"
+level = "green"
+source = "bv-completion.el"
+
+[[keybindings]]
+key = "C-c p f"
+function = "cape-file"
+description = "File path completion"
+category = "custom"
+level = "green"
+source = "bv-completion.el"
+
+[[keybindings]]
+key = "C-c p k"
+function = "cape-keyword"
+description = "Programming keyword completion"
+category = "custom"
+level = "green"
+source = "bv-completion.el"
+
+[[keybindings]]
+key = "C-c p s"
+function = "cape-symbol"
+description = "Symbol completion"
+category = "custom"
+level = "green"
+source = "bv-completion.el"
+
+[[keybindings]]
+key = "C-c p a"
+function = "cape-abbrev"
+description = "Abbreviation completion"
+category = "custom"
+level = "green"
+source = "bv-completion.el"
+
+[[keybindings]]
+key = "C-c p i"
+function = "cape-ispell"
+description = "Spell checking completion"
+category = "custom"
+level = "green"
+source = "bv-completion.el"
+
+[[keybindings]]
+key = "C-c p l"
+function = "cape-line"
+description = "Complete entire lines"
+category = "custom"
+level = "green"
+source = "bv-completion.el"
+
+[[keybindings]]
+key = "C-c p w"
+function = "cape-dict"
+description = "Dictionary word completion"
+category = "custom"
+level = "green"
+source = "bv-completion.el"
+
+# PROJECT MANAGEMENT
+[[keybindings]]
+key = "s-p"
+function = "project-prefix-map"
+description = "🔥 Project management prefix - your command center"
+category = "custom"
+level = "green"
+source = "bv-navigation.el"
+
+[[keybindings]]
+key = "s-p P"
+function = "bv-project-switch-project-in-perspective"
+description = "Switch project in its own perspective"
+category = "custom"
+level = "blue"
+source = "bv-navigation.el"
+
+[[keybindings]]
+key = "s-p F"
+function = "consult-find"
+description = "Find files in project with preview"
+category = "custom"
+level = "green"
+source = "bv-navigation.el"
+
+[[keybindings]]
+key = "s-p R"
+function = "consult-ripgrep"
+description = "Ripgrep search in project"
+category = "custom"
+level = "green"
+source = "bv-navigation.el"
+
+[[keybindings]]
+key = "s-p b"
+function = "consult-project-buffer"
+description = "Switch to project buffer"
+category = "custom"
+level = "green"
+source = "bv-navigation.el"
+
+[[keybindings]]
+key = "s-p d"
+function = "project-dired"
+description = "Open project root in Dired"
+category = "custom"
+level = "green"
+source = "bv-navigation.el"
+
+[[keybindings]]
+key = "s-p c"
+function = "project-compile"
+description = "Compile project"
+category = "custom"
+level = "green"
+source = "bv-navigation.el"
+
+[[keybindings]]
+key = "s-p t"
+function = "bv-project-todo"
+description = "Find TODOs in project"
+category = "custom"
+level = "green"
+source = "bv-navigation.el"
+
+# DIRED ENHANCEMENTS
+[[keybindings]]
+key = "s-d"
+function = "dired-jump"
+description = "Jump to Dired for current file"
+category = "file"
+level = "yellow"
+source = "bv-navigation.el"
+
+[[keybindings]]
+key = "q"
+function = "kill-current-buffer"
+description = "Quit Dired buffer (in Dired mode)"
+category = "file"
+level = "yellow"
+source = "bv-navigation.el"
+
+[[keybindings]]
+key = "V"
+function = "bv-dired-open-externally"
+description = "Open in external app (in Dired)"
+category = "file"
+level = "orange"
+source = "bv-navigation.el"
+
+[[keybindings]]
+key = "C-c C-r"
+function = "dired-rsync"
+description = "Rsync files (in Dired)"
+category = "file"
+level = "orange"
+source = "bv-navigation.el"
+
+[[keybindings]]
+key = "M-n"
+function = "dired-next-subdir"
+description = "Next subdirectory (in Dired)"
+category = "file"
+level = "yellow"
+source = "bv-navigation.el"
+
+[[keybindings]]
+key = "M-p"
+function = "dired-prev-subdir"
+description = "Previous subdirectory (in Dired)"
+category = "file"
+level = "yellow"
+source = "bv-navigation.el"
+
+[[keybindings]]
+key = "M-u"
+function = "dired-up-directory"
+description = "Go up directory (in Dired)"
+category = "file"
+level = "yellow"
+source = "bv-navigation.el"
+
+# ACE WINDOW
+[[keybindings]]
+key = "M-o"
+function = "ace-window"
+description = "🔥 Jump to window by letter"
+category = "window"
+level = "blue"
+source = "bv-navigation.el"
+
+[[keybindings]]
+key = "s-o"
+function = "ace-window"
+description = "🔥 Jump to window by letter (super key)"
+category = "window"
+level = "blue"
+source = "bv-navigation.el"
+
+# FOCUS MODE
+[[keybindings]]
+key = "s-f"
+function = "bv-toggle-focus-mode"
+description = "🧘 Toggle focus/zen mode"
+category = "custom"
+level = "blue"
+source = "bv-navigation.el"
+
+# WINDOW MANAGEMENT
+[[keybindings]]
+key = "C-x 2"
+function = "bv-split-window-below-and-switch"
+description = "Split window below and switch (improved)"
+category = "window"
+level = "orange"
+source = "bv-navigation.el"
+
+[[keybindings]]
+key = "C-x 3"
+function = "bv-split-window-right-and-switch"
+description = "Split window right and switch (improved)"
+category = "window"
+level = "orange"
+source = "bv-navigation.el"
+
+[[keybindings]]
+key = "C-x }"
+function = "bv-window-resize"
+description = "Interactive window resize"
+category = "window"
+level = "green"
+source = "bv-navigation.el"
+
+[[keybindings]]
+key = "C-x {"
+function = "bv-window-resize"
+description = "Interactive window resize"
+category = "window"
+level = "green"
+source = "bv-navigation.el"
+
+[[keybindings]]
+key = "s-w"
+function = "bv-kill-current-buffer"
+description = "Kill current buffer (super key)"
+category = "buffer"
+level = "yellow"
+source = "bv-navigation.el"
+
+[[keybindings]]
+key = "s-W"
+function = "bv-kill-buffer-and-window"
+description = "Kill buffer and window"
+category = "buffer"
+level = "yellow"
+source = "bv-navigation.el"
+
+# GIT/MAGIT
+[[keybindings]]
+key = "C-x g"
+function = "magit-status"
+description = "🔥 Magit status - Git nirvana begins here"
+category = "custom"
+level = "blue"
+source = "bv-git.el"
+
+[[keybindings]]
+key = "C-x M-g"
+function = "magit-dispatch"
+description = "Magit command dispatch"
+category = "custom"
+level = "blue"
+source = "bv-git.el"
+
+[[keybindings]]
+key = "C-c g"
+function = "magit-file-dispatch"
+description = "Magit file-specific commands"
+category = "custom"
+level = "blue"
+source = "bv-git.el"
+
+[[keybindings]]
+key = "C-c t g"
+function = "git-gutter-mode"
+description = "Toggle git-gutter mode"
+category = "custom"
+level = "green"
+source = "bv-git.el"
+
+[[keybindings]]
+key = "C-c t G"
+function = "global-git-gutter-mode"
+description = "Toggle global git-gutter mode"
+category = "custom"
+level = "green"
+source = "bv-git.el"
+
+# SMARTPARENS NAVIGATION
+[[keybindings]]
+key = "C-M-a"
+function = "sp-beginning-of-sexp"
+description = "Move to beginning of s-expression"
+category = "movement"
+level = "orange"
+source = "bv-development.el"
+
+[[keybindings]]
+key = "C-M-e"
+function = "sp-end-of-sexp"
+description = "Move to end of s-expression"
+category = "movement"
+level = "orange"
+source = "bv-development.el"
+
+[[keybindings]]
+key = "C-<down>"
+function = "sp-down-sexp"
+description = "Move down into s-expression"
+category = "movement"
+level = "orange"
+source = "bv-development.el"
+
+[[keybindings]]
+key = "C-<up>"
+function = "sp-up-sexp"
+description = "Move up out of s-expression"
+category = "movement"
+level = "orange"
+source = "bv-development.el"
+
+[[keybindings]]
+key = "M-<down>"
+function = "sp-backward-down-sexp"
+description = "Move backward down into s-expression"
+category = "movement"
+level = "green"
+source = "bv-development.el"
+
+[[keybindings]]
+key = "M-<up>"
+function = "sp-backward-up-sexp"
+description = "Move backward up out of s-expression"
+category = "movement"
+level = "green"
+source = "bv-development.el"
+
+[[keybindings]]
+key = "C-M-f"
+function = "sp-forward-sexp"
+description = "Move forward by s-expression"
+category = "movement"
+level = "orange"
+source = "bv-development.el"
+
+[[keybindings]]
+key = "C-M-b"
+function = "sp-backward-sexp"
+description = "Move backward by s-expression"
+category = "movement"
+level = "orange"
+source = "bv-development.el"
+
+[[keybindings]]
+key = "C-M-n"
+function = "sp-next-sexp"
+description = "Move to next s-expression"
+category = "movement"
+level = "orange"
+source = "bv-development.el"
+
+[[keybindings]]
+key = "C-M-p"
+function = "sp-previous-sexp"
+description = "Move to previous s-expression"
+category = "movement"
+level = "orange"
+source = "bv-development.el"
+
+[[keybindings]]
+key = "C-S-f"
+function = "sp-forward-symbol"
+description = "Move forward by symbol"
+category = "movement"
+level = "orange"
+source = "bv-development.el"
+
+[[keybindings]]
+key = "C-S-b"
+function = "sp-backward-symbol"
+description = "Move backward by symbol"
+category = "movement"
+level = "orange"
+source = "bv-development.el"
+
+# SMARTPARENS SLURP/BARF
+[[keybindings]]
+key = "C-<right>"
+function = "sp-forward-slurp-sexp"
+description = "🔥 Slurp next s-expression into current"
+category = "editing"
+level = "blue"
+source = "bv-development.el"
+
+[[keybindings]]
+key = "M-<right>"
+function = "sp-forward-barf-sexp"
+description = "🔥 Barf last s-expression out of current"
+category = "editing"
+level = "blue"
+source = "bv-development.el"
+
+[[keybindings]]
+key = "C-<left>"
+function = "sp-backward-slurp-sexp"
+description = "🔥 Slurp previous s-expression into current"
+category = "editing"
+level = "blue"
+source = "bv-development.el"
+
+[[keybindings]]
+key = "M-<left>"
+function = "sp-backward-barf-sexp"
+description = "🔥 Barf first s-expression out of current"
+category = "editing"
+level = "blue"
+source = "bv-development.el"
+
+# SMARTPARENS MANIPULATION
+[[keybindings]]
+key = "C-M-t"
+function = "sp-transpose-sexp"
+description = "Transpose s-expressions"
+category = "editing"
+level = "green"
+source = "bv-development.el"
+
+[[keybindings]]
+key = "C-M-k"
+function = "sp-kill-sexp"
+description = "Kill s-expression"
+category = "editing"
+level = "orange"
+source = "bv-development.el"
+
+[[keybindings]]
+key = "C-k"
+function = "sp-kill-hybrid-sexp"
+description = "Kill to end of line or s-expression"
+category = "editing"
+level = "orange"
+source = "bv-development.el"
+
+[[keybindings]]
+key = "M-k"
+function = "sp-backward-kill-sexp"
+description = "Kill backward s-expression"
+category = "editing"
+level = "orange"
+source = "bv-development.el"
+
+[[keybindings]]
+key = "C-M-w"
+function = "sp-copy-sexp"
+description = "Copy s-expression"
+category = "editing"
+level = "orange"
+source = "bv-development.el"
+
+[[keybindings]]
+key = "C-M-d"
+function = "delete-sexp"
+description = "Delete s-expression"
+category = "editing"
+level = "orange"
+source = "bv-development.el"
+
+[[keybindings]]
+key = "M-["
+function = "sp-backward-unwrap-sexp"
+description = "Unwrap backward s-expression"
+category = "editing"
+level = "green"
+source = "bv-development.el"
+
+[[keybindings]]
+key = "M-]"
+function = "sp-unwrap-sexp"
+description = "Unwrap s-expression"
+category = "editing"
+level = "green"
+source = "bv-development.el"
+
+[[keybindings]]
+key = "C-<backspace>"
+function = "sp-backward-kill-word"
+description = "Kill word backward (smartparens)"
+category = "editing"
+level = "yellow"
+source = "bv-development.el"
+
+[[keybindings]]
+key = "C-x C-t"
+function = "sp-transpose-hybrid-sexp"
+description = "Transpose hybrid s-expression"
+category = "editing"
+level = "green"
+source = "bv-development.el"
+
+# SMARTPARENS WRAPPING
+[[keybindings]]
+key = "C-c ("
+function = "wrap-with-parens"
+description = "Wrap with parentheses ()"
+category = "editing"
+level = "green"
+source = "bv-development.el"
+
+[[keybindings]]
+key = "C-c ["
+function = "wrap-with-brackets"
+description = "Wrap with brackets []"
+category = "editing"
+level = "green"
+source = "bv-development.el"
+
+[[keybindings]]
+key = "C-c {"
+function = "wrap-with-braces"
+description = "Wrap with braces {}"
+category = "editing"
+level = "green"
+source = "bv-development.el"
+
+[[keybindings]]
+key = "C-c '"
+function = "wrap-with-single-quotes"
+description = "Wrap with single quotes ''"
+category = "editing"
+level = "green"
+source = "bv-development.el"
+
+[[keybindings]]
+key = "C-c \""
+function = "wrap-with-double-quotes"
+description = "Wrap with double quotes \"\""
+category = "editing"
+level = "green"
+source = "bv-development.el"
+
+[[keybindings]]
+key = "C-c _"
+function = "wrap-with-underscores"
+description = "Wrap with underscores __"
+category = "editing"
+level = "green"
+source = "bv-development.el"
+
+[[keybindings]]
+key = "C-c `"
+function = "wrap-with-back-quotes"
+description = "Wrap with backticks ``"
+category = "editing"
+level = "green"
+source = "bv-development.el"
+
+# EGLOT LSP
+[[keybindings]]
+key = "C-c l r"
+function = "eglot-rename"
+description = "LSP: Rename symbol"
+category = "custom"
+level = "blue"
+source = "bv-development.el"
+
+[[keybindings]]
+key = "C-c l a"
+function = "eglot-code-actions"
+description = "LSP: Code actions"
+category = "custom"
+level = "blue"
+source = "bv-development.el"
+
+[[keybindings]]
+key = "C-c l o"
+function = "eglot-code-action-organize-imports"
+description = "LSP: Organize imports"
+category = "custom"
+level = "blue"
+source = "bv-development.el"
+
+[[keybindings]]
+key = "C-c l f"
+function = "eglot-format"
+description = "LSP: Format region/function"
+category = "custom"
+level = "blue"
+source = "bv-development.el"
+
+[[keybindings]]
+key = "C-c l F"
+function = "eglot-format-buffer"
+description = "LSP: Format entire buffer"
+category = "custom"
+level = "blue"
+source = "bv-development.el"
+
+[[keybindings]]
+key = "C-c l d"
+function = "eldoc"
+description = "Show documentation at point"
+category = "custom"
+level = "green"
+source = "bv-development.el"
+
+[[keybindings]]
+key = "C-c l s"
+function = "consult-eglot-symbols"
+description = "LSP: Search workspace symbols"
+category = "custom"
+level = "blue"
+source = "bv-development.el"
+
+[[keybindings]]
+key = "M-g s"
+function = "consult-eglot-symbols"
+description = "LSP: Search workspace symbols"
+category = "search"
+level = "blue"
+source = "bv-development.el"
+
+# FLYMAKE
+[[keybindings]]
+key = "M-n"
+function = "flymake-goto-next-error"
+description = "Next error/warning (in Flymake mode)"
+category = "core"
+level = "yellow"
+source = "bv-development.el"
+
+[[keybindings]]
+key = "M-p"
+function = "flymake-goto-prev-error"
+description = "Previous error/warning (in Flymake mode)"
+category = "core"
+level = "yellow"
+source = "bv-development.el"
+
+[[keybindings]]
+key = "C-c ! l"
+function = "flymake-show-buffer-diagnostics"
+description = "Show buffer diagnostics"
+category = "core"
+level = "yellow"
+source = "bv-development.el"
+
+[[keybindings]]
+key = "C-c ! L"
+function = "flymake-show-project-diagnostics"
+description = "Show project diagnostics"
+category = "core"
+level = "yellow"
+source = "bv-development.el"
+
+[[keybindings]]
+key = "C-c ! n"
+function = "flymake-goto-next-error"
+description = "Next error (alternative)"
+category = "core"
+level = "yellow"
+source = "bv-development.el"
+
+[[keybindings]]
+key = "C-c ! p"
+function = "flymake-goto-prev-error"
+description = "Previous error (alternative)"
+category = "core"
+level = "yellow"
+source = "bv-development.el"
+
+# XREF
+[[keybindings]]
+key = "M-."
+function = "xref-find-definitions"
+description = "🔥 Go to definition"
+category = "movement"
+level = "green"
+source = "bv-development.el"
+
+[[keybindings]]
+key = "M-,"
+function = "xref-go-back"
+description = "🔥 Go back from definition"
+category = "movement"
+level = "green"
+source = "bv-development.el"
+
+[[keybindings]]
+key = "M-?"
+function = "xref-find-references"
+description = "Find all references"
+category = "movement"
+level = "green"
+source = "bv-development.el"
+
+[[keybindings]]
+key = "C-M-."
+function = "xref-find-apropos"
+description = "Find symbols matching pattern"
+category = "movement"
+level = "green"
+source = "bv-development.el"
+
+# MISC DEVELOPMENT
+[[keybindings]]
+key = "C-c r"
+function = "re-builder"
+description = "Interactive regexp builder"
+category = "custom"
+level = "green"
+source = "bv-development.el"
+
+[[keybindings]]
+key = "C-c c"
+function = "compile"
+description = "Compile command"
+category = "custom"
+level = "green"
+source = "bv-development.el"
+
+[[keybindings]]
+key = "C-c C"
+function = "recompile"
+description = "Repeat last compile"
+category = "custom"
+level = "green"
+source = "bv-development.el"
+
+[[keybindings]]
+key = "C-c @"
+function = "hs-toggle-hiding"
+description = "Toggle code folding (hideshow)"
+category = "editing"
+level = "yellow"
+source = "bv-development.el"
+
+[[keybindings]]
+key = "C-c h"
+function = "hs-hide-all"
+description = "Hide all code blocks"
+category = "editing"
+level = "yellow"
+source = "bv-development.el"
+
+[[keybindings]]
+key = "C-c s"
+function = "hs-show-all"
+description = "Show all code blocks"
+category = "editing"
+level = "yellow"
+source = "bv-development.el"
+
+# ORG MODE
+[[keybindings]]
+key = "C-c c"
+function = "org-capture"
+description = "🔥 Capture quick notes/tasks"
+category = "custom"
+level = "green"
+source = "bv-org.el"
+
+[[keybindings]]
+key = "C-c a"
+function = "org-agenda"
+description = "🔥 Open agenda view"
+category = "custom"
+level = "green"
+source = "bv-org.el"
+
+[[keybindings]]
+key = "C-c l"
+function = "org-store-link"
+description = "Store link at point"
+category = "custom"
+level = "green"
+source = "bv-org.el"
+
+[[keybindings]]
+key = "C-c C-x C-s"
+function = "bv-org-mark-done-and-archive"
+description = "Mark done and archive (in org-mode)"
+category = "custom"
+level = "orange"
+source = "bv-org.el"
+
+[[keybindings]]
+key = "C-c C-x C-a"
+function = "org-archive-subtree"
+description = "Archive subtree (in org-mode)"
+category = "custom"
+level = "orange"
+source = "bv-org.el"
+
+[[keybindings]]
+key = "C-c t"
+function = "org-todo"
+description = "Cycle TODO state (in org-mode)"
+category = "custom"
+level = "yellow"
+source = "bv-org.el"
+
+[[keybindings]]
+key = "C-c a o s"
+function = "org-timer-start"
+description = "Start org timer"
+category = "custom"
+level = "blue"
+source = "bv-org.el"
+
+[[keybindings]]
+key = "C-c a o q"
+function = "org-timer-stop"
+description = "Stop org timer"
+category = "custom"
+level = "blue"
+source = "bv-org.el"
+
+[[keybindings]]
+key = "C-c a o p"
+function = "org-timer-pause-or-continue"
+description = "Pause/continue org timer"
+category = "custom"
+level = "blue"
+source = "bv-org.el"
+
+[[keybindings]]
+key = "C-c a o t"
+function = "org-timer-set-timer"
+description = "Set countdown timer"
+category = "custom"
+level = "blue"
+source = "bv-org.el"
+
+# WRITING TOOLS
+[[keybindings]]
+key = "C-;"
+function = "flyspell-correct-wrapper"
+description = "🔥 Correct spelling at point"
+category = "custom"
+level = "yellow"
+source = "bv-writing.el"
+
+[[keybindings]]
+key = "C-c L c"
+function = "langtool-check"
+description = "Check grammar with LanguageTool"
+category = "custom"
+level = "blue"
+source = "bv-writing.el"
+
+[[keybindings]]
+key = "C-c L d"
+function = "langtool-check-done"
+description = "Clear LanguageTool marks"
+category = "custom"
+level = "blue"
+source = "bv-writing.el"
+
+[[keybindings]]
+key = "C-c L s"
+function = "langtool-server-mode-toggle"
+description = "Toggle LanguageTool server"
+category = "custom"
+level = "blue"
+source = "bv-writing.el"
+
+[[keybindings]]
+key = "C-c L n"
+function = "langtool-goto-next-error"
+description = "Next grammar error"
+category = "custom"
+level = "blue"
+source = "bv-writing.el"
+
+[[keybindings]]
+key = "C-c L p"
+function = "langtool-goto-previous-error"
+description = "Previous grammar error"
+category = "custom"
+level = "blue"
+source = "bv-writing.el"
+
+[[keybindings]]
+key = "C-c L ."
+function = "langtool-correct-buffer"
+description = "Correct all grammar errors"
+category = "custom"
+level = "blue"
+source = "bv-writing.el"
+
+[[keybindings]]
+key = "C-c a w c"
+function = "bv-writing-insert-citation"
+description = "Insert citation"
+category = "custom"
+level = "green"
+source = "bv-writing.el"
+
+[[keybindings]]
+key = "C-c a w e"
+function = "bv-writing-export-to-pdf"
+description = "Export to PDF"
+category = "custom"
+level = "green"
+source = "bv-writing.el"
+
+[[keybindings]]
+key = "C-c a w g"
+function = "bv-writing-check-grammar"
+description = "Check grammar"
+category = "custom"
+level = "green"
+source = "bv-writing.el"
+
+[[keybindings]]
+key = "C-c a w s"
+function = "flyspell-correct-wrapper"
+description = "Spell check"
+category = "custom"
+level = "green"
+source = "bv-writing.el"
+
+[[keybindings]]
+key = "C-c a w S"
+function = "ispell-buffer"
+description = "Spell check entire buffer"
+category = "custom"
+level = "green"
+source = "bv-writing.el"
+
+[[keybindings]]
+key = "C-c a w w"
+function = "bv-writing-count-words-region"
+description = "Count words in region"
+category = "custom"
+level = "green"
+source = "bv-writing.el"
+
+[[keybindings]]
+key = "C-c a w f"
+function = "olivetti-mode"
+description = "Toggle focus writing mode"
+category = "custom"
+level = "green"
+source = "bv-writing.el"
+
+[[keybindings]]
+key = "C-c a w a"
+function = "academic-phrases"
+description = "Insert academic phrases"
+category = "custom"
+level = "blue"
+source = "bv-writing.el"
+
+# RESEARCH/ORG-ROAM
+[[keybindings]]
+key = "C-c n n"
+function = "org-roam-buffer-toggle"
+description = "🔥 Toggle org-roam buffer"
+category = "custom"
+level = "blue"
+source = "bv-research.el"
+
+[[keybindings]]
+key = "C-c n f"
+function = "org-roam-node-find"
+description = "🔥 Find/create org-roam note"
+category = "custom"
+level = "blue"
+source = "bv-research.el"
+
+[[keybindings]]
+key = "C-c n i"
+function = "org-roam-node-insert"
+description = "Insert link to org-roam note"
+category = "custom"
+level = "blue"
+source = "bv-research.el"
+
+[[keybindings]]
+key = "C-c n r"
+function = "org-roam-ref-find"
+description = "Find notes by reference"
+category = "custom"
+level = "blue"
+source = "bv-research.el"
+
+[[keybindings]]
+key = "C-c n R"
+function = "bv-research-org-roam-ref-add"
+description = "Add reference to note"
+category = "custom"
+level = "blue"
+source = "bv-research.el"
+
+[[keybindings]]
+key = "C-c n g"
+function = "org-roam-graph"
+description = "Show knowledge graph"
+category = "custom"
+level = "blue"
+source = "bv-research.el"
+
+[[keybindings]]
+key = "C-c n c"
+function = "org-roam-capture"
+description = "Capture new note"
+category = "custom"
+level = "blue"
+source = "bv-research.el"
+
+[[keybindings]]
+key = "C-c n d"
+function = "org-roam-dailies-capture-today"
+description = "Today's daily note"
+category = "custom"
+level = "blue"
+source = "bv-research.el"
+
+[[keybindings]]
+key = "C-c n t"
+function = "org-roam-tag-add"
+description = "Add tag to note"
+category = "custom"
+level = "blue"
+source = "bv-research.el"
+
+[[keybindings]]
+key = "C-c n T"
+function = "org-roam-tag-remove"
+description = "Remove tag from note"
+category = "custom"
+level = "blue"
+source = "bv-research.el"
+
+[[keybindings]]
+key = "C-c n a"
+function = "org-roam-alias-add"
+description = "Add alias to note"
+category = "custom"
+level = "blue"
+source = "bv-research.el"
+
+[[keybindings]]
+key = "C-c n A"
+function = "org-roam-alias-remove"
+description = "Remove alias from note"
+category = "custom"
+level = "blue"
+source = "bv-research.el"
+
+# BIBLIOGRAPHY/CITAR
+[[keybindings]]
+key = "C-c ]"
+function = "org-cite-insert"
+description = "Insert citation"
+category = "custom"
+level = "green"
+source = "bv-research.el"
+
+[[keybindings]]
+key = "C-c b c"
+function = "citar-insert-citation"
+description = "🔥 Insert bibliography citation"
+category = "custom"
+level = "blue"
+source = "bv-writing.el"
+
+[[keybindings]]
+key = "C-c b r"
+function = "citar-insert-reference"
+description = "Insert reference"
+category = "custom"
+level = "blue"
+source = "bv-writing.el"
+
+[[keybindings]]
+key = "C-c b o"
+function = "citar-open"
+description = "Open citation"
+category = "custom"
+level = "blue"
+source = "bv-writing.el"
+
+[[keybindings]]
+key = "C-c b n"
+function = "citar-open-notes"
+description = "Open citation notes"
+category = "custom"
+level = "blue"
+source = "bv-writing.el"
+
+[[keybindings]]
+key = "C-c b f"
+function = "citar-open-files"
+description = "Open citation files"
+category = "custom"
+level = "blue"
+source = "bv-writing.el"
+
+[[keybindings]]
+key = "C-c n b"
+function = "bv-research-find-bibliography"
+description = "Open bibliography file"
+category = "custom"
+level = "green"
+source = "bv-research.el"
+
+[[keybindings]]
+key = "C-c z a"
+function = "zotra-add-entry"
+description = "Add Zotero entry"
+category = "custom"
+level = "blue"
+source = "bv-research.el"
+
+[[keybindings]]
+key = "C-c N"
+function = "org-noter"
+description = "Start PDF annotation session"
+category = "custom"
+level = "blue"
+source = "bv-research.el"
+
+# RESEARCH WORKFLOW
+[[keybindings]]
+key = "C-c a r p"
+function = "bv-research-new-project"
+description = "Create new research project"
+category = "custom"
+level = "green"
+source = "bv-research.el"
+
+[[keybindings]]
+key = "C-c a r l"
+function = "bv-research-literature-review"
+description = "Start literature review"
+category = "custom"
+level = "green"
+source = "bv-research.el"
+
+[[keybindings]]
+key = "C-c a r n"
+function = "bv-research-noter-from-citar"
+description = "Annotate PDF from citation"
+category = "custom"
+level = "green"
+source = "bv-research.el"
+
+[[keybindings]]
+key = "C-c a r e"
+function = "bv-research-export-bibliography"
+description = "Export bibliography"
+category = "custom"
+level = "green"
+source = "bv-research.el"
+
+# ARXIV
+[[keybindings]]
+key = "C-c C-a s"
+function = "arxiv-search"
+description = "Search arXiv papers"
+category = "custom"
+level = "blue"
+source = "bv-research.el"
+
+[[keybindings]]
+key = "C-c C-a r"
+function = "arxiv-read"
+description = "Read arXiv feed"
+category = "custom"
+level = "blue"
+source = "bv-research.el"
+
+# ELFEED
+[[keybindings]]
+key = "C-x w"
+function = "elfeed"
+description = "🔥 Open RSS feed reader"
+category = "custom"
+level = "green"
+source = "bv-reading.el"
+
+[[keybindings]]
+key = "C-c a R e"
+function = "elfeed"
+description = "Open elfeed"
+category = "custom"
+level = "green"
+source = "bv-reading.el"
+
+[[keybindings]]
+key = "C-c a R p"
+function = "pdf-tools-install"
+description = "Install PDF tools"
+category = "custom"
+level = "green"
+source = "bv-reading.el"
+
+[[keybindings]]
+key = "C-c a R i"
+function = "info"
+description = "Open Info browser"
+category = "custom"
+level = "green"
+source = "bv-reading.el"
+
+[[keybindings]]
+key = "C-c a R l"
+function = "find-reading-list"
+description = "Open reading list"
+category = "custom"
+level = "green"
+source = "bv-reading.el"
+
+[[keybindings]]
+key = "C-c a R a"
+function = "bv-reading-add-to-list"
+description = "Add to reading list"
+category = "custom"
+level = "green"
+source = "bv-reading.el"
+
+[[keybindings]]
+key = "C-c a R u"
+function = "bv-reading-open-url"
+description = "Open URL in reader"
+category = "custom"
+level = "green"
+source = "bv-reading.el"
+
+# ELFEED SEARCH MODE
+[[keybindings]]
+key = "q"
+function = "bv-reading-elfeed-quit"
+description = "Quit elfeed (in elfeed-search)"
+category = "custom"
+level = "yellow"
+source = "bv-reading.el"
+
+[[keybindings]]
+key = "g"
+function = "elfeed-update"
+description = "Update feeds (in elfeed-search)"
+category = "custom"
+level = "yellow"
+source = "bv-reading.el"
+
+[[keybindings]]
+key = "G"
+function = "elfeed-search-update--force"
+description = "Force update feeds (in elfeed-search)"
+category = "custom"
+level = "yellow"
+source = "bv-reading.el"
+
+[[keybindings]]
+key = "f"
+function = "bv-reading-elfeed-search-filter"
+description = "Set filter (in elfeed-search)"
+category = "custom"
+level = "yellow"
+source = "bv-reading.el"
+
+[[keybindings]]
+key = "F"
+function = "bv-reading-elfeed-reset-filter"
+description = "Reset filter (in elfeed-search)"
+category = "custom"
+level = "yellow"
+source = "bv-reading.el"
+
+[[keybindings]]
+key = "s"
+function = "bv-reading-elfeed-save-search"
+description = "Save search (in elfeed-search)"
+category = "custom"
+level = "yellow"
+source = "bv-reading.el"
+
+[[keybindings]]
+key = "S"
+function = "bv-reading-elfeed-load-search"
+description = "Load saved search (in elfeed-search)"
+category = "custom"
+level = "yellow"
+source = "bv-reading.el"
+
+[[keybindings]]
+key = "R"
+function = "elfeed-mark-all-as-read"
+description = "Mark all as read (in elfeed-search)"
+category = "custom"
+level = "yellow"
+source = "bv-reading.el"
+
+# PDF VIEW MODE
+[[keybindings]]
+key = "h"
+function = "pdf-annot-add-highlight-markup-annotation"
+description = "Highlight text (in PDF)"
+category = "file"
+level = "orange"
+source = "bv-reading.el"
+
+[[keybindings]]
+key = "t"
+function = "pdf-annot-add-text-annotation"
+description = "Add text note (in PDF)"
+category = "file"
+level = "orange"
+source = "bv-reading.el"
+
+[[keybindings]]
+key = "D"
+function = "pdf-annot-delete"
+description = "Delete annotation (in PDF)"
+category = "file"
+level = "orange"
+source = "bv-reading.el"
+
+[[keybindings]]
+key = "M"
+function = "bv-reading-pdf-view-theme-toggle"
+description = "Toggle dark mode (in PDF)"
+category = "file"
+level = "orange"
+source = "bv-reading.el"
+
+[[keybindings]]
+key = "n"
+function = "pdf-view-next-page"
+description = "Next page (in PDF)"
+category = "file"
+level = "yellow"
+source = "bv-reading.el"
+
+[[keybindings]]
+key = "d"
+function = "pdf-view-next-page"
+description = "Next page (in PDF)"
+category = "file"
+level = "yellow"
+source = "bv-reading.el"
+
+[[keybindings]]
+key = "p"
+function = "pdf-view-previous-page"
+description = "Previous page (in PDF)"
+category = "file"
+level = "yellow"
+source = "bv-reading.el"
+
+[[keybindings]]
+key = "u"
+function = "pdf-view-previous-page"
+description = "Previous page (in PDF)"
+category = "file"
+level = "yellow"
+source = "bv-reading.el"
+
+[[keybindings]]
+key = "+"
+function = "pdf-view-enlarge"
+description = "Zoom in (in PDF)"
+category = "file"
+level = "yellow"
+source = "bv-reading.el"
+
+[[keybindings]]
+key = "-"
+function = "pdf-view-shrink"
+description = "Zoom out (in PDF)"
+category = "file"
+level = "yellow"
+source = "bv-reading.el"
+
+[[keybindings]]
+key = "/"
+function = "pdf-occur"
+description = "Search in PDF"
+category = "file"
+level = "yellow"
+source = "bv-reading.el"
+
+# EPUB/NOV MODE
+[[keybindings]]
+key = "n"
+function = "nov-next-document"
+description = "Next chapter (in EPUB)"
+category = "file"
+level = "orange"
+source = "bv-reading.el"
+
+[[keybindings]]
+key = "p"
+function = "nov-previous-document"
+description = "Previous chapter (in EPUB)"
+category = "file"
+level = "orange"
+source = "bv-reading.el"
+
+[[keybindings]]
+key = "t"
+function = "nov-goto-toc"
+description = "Table of contents (in EPUB)"
+category = "file"
+level = "orange"
+source = "bv-reading.el"
+
+[[keybindings]]
+key = "S"
+function = "nov-save-place"
+description = "Save reading position (in EPUB)"
+category = "file"
+level = "orange"
+source = "bv-reading.el"
+
+# INFO MODE
+[[keybindings]]
+key = "i"
+function = "Info-index"
+description = "Index search (in Info)"
+category = "core"
+level = "green"
+source = "bv-reading.el"
+
+[[keybindings]]
+key = "I"
+function = "Info-virtual-index"
+description = "Virtual index (in Info)"
+category = "core"
+level = "green"
+source = "bv-reading.el"
+
+[[keybindings]]
+key = "T"
+function = "Info-toc"
+description = "Table of contents (in Info)"
+category = "core"
+level = "green"
+source = "bv-reading.el"
+
+# SHELL INTEGRATION
+[[keybindings]]
+key = "C-c a s"
+function = "bv-shell-map"
+description = "Shell operations prefix map"
+category = "custom"
+level = "yellow"
+source = "bv-shell.el"
+
+[[keybindings]]
+key = "C-c a s s"
+function = "shell"
+description = "Open shell buffer"
+category = "custom"
+level = "yellow"
+source = "bv-shell.el"
+
+[[keybindings]]
+key = "C-c a s e"
+function = "eshell"
+description = "Open eshell buffer"
+category = "custom"
+level = "yellow"
+source = "bv-shell.el"
+
+[[keybindings]]
+key = "C-c a s t"
+function = "ansi-term"
+description = "Open terminal emulator"
+category = "custom"
+level = "yellow"
+source = "bv-shell.el"
+
+[[keybindings]]
+key = "C-c a s v"
+function = "vterm"
+description = "Open vterm (fast terminal)"
+category = "custom"
+level = "green"
+source = "bv-shell.el"
+
+[[keybindings]]
+key = "C-c a s d"
+function = "docker"
+description = "Docker interface"
+category = "custom"
+level = "blue"
+source = "bv-shell.el"
+
+[[keybindings]]
+key = "C-c a s p"
+function = "proced"
+description = "Process manager"
+category = "custom"
+level = "green"
+source = "bv-shell.el"
+
+[[keybindings]]
+key = "C-c a s h"
+function = "bv-shell-here"
+description = "Shell in current directory"
+category = "custom"
+level = "yellow"
+source = "bv-shell.el"
+
+[[keybindings]]
+key = "C-c a s r"
+function = "shell-command-on-region"
+description = "Run shell command on region"
+category = "custom"
+level = "green"
+source = "bv-shell.el"
+
+[[keybindings]]
+key = "C-c a s !"
+function = "async-shell-command"
+description = "Run async shell command"
+category = "custom"
+level = "green"
+source = "bv-shell.el"
+
+[[keybindings]]
+key = "C-c a s k"
+function = "kubernetes-overview"
+description = "Kubernetes dashboard"
+category = "custom"
+level = "blue"
+source = "bv-shell.el"
+
+[[keybindings]]
+key = "C-c a s i"
+function = "docker-images"
+description = "Docker images"
+category = "custom"
+level = "blue"
+source = "bv-shell.el"
+
+[[keybindings]]
+key = "C-c a s c"
+function = "docker-containers"
+description = "Docker containers"
+category = "custom"
+level = "blue"
+source = "bv-shell.el"
+
+# VTERM MODE BINDINGS
+[[keybindings]]
+key = "C-c C-c"
+function = "vterm-send-C-c"
+description = "Send Ctrl-C (in vterm)"
+category = "custom"
+level = "yellow"
+source = "bv-shell.el"
+
+[[keybindings]]
+key = "C-c C-z"
+function = "vterm-send-C-z"
+description = "Send Ctrl-Z (in vterm)"
+category = "custom"
+level = "yellow"
+source = "bv-shell.el"
+
+[[keybindings]]
+key = "C-c C-t"
+function = "vterm-copy-mode"
+description = "Enter copy mode (in vterm)"
+category = "custom"
+level = "yellow"
+source = "bv-shell.el"
+
+# C/C++ DEVELOPMENT
+[[keybindings]]
+key = "C-c C-r"
+function = "compile"
+description = "Compile (in C/C++ mode)"
+category = "custom"
+level = "green"
+source = "bv-c.el"
+
+[[keybindings]]
+key = "C-c C-k"
+function = "bv-c-clean"
+description = "Clean build artifacts (in C/C++)"
+category = "custom"
+level = "green"
+source = "bv-c.el"
+
+[[keybindings]]
+key = "C-c C-c"
+function = "bv-c-compile-and-run"
+description = "Compile and run (in C/C++)"
+category = "custom"
+level = "green"
+source = "bv-c.el"
+
+[[keybindings]]
+key = "C-c C-d"
+function = "gdb"
+description = "Start debugger (in C/C++)"
+category = "custom"
+level = "blue"
+source = "bv-c.el"
+
+[[keybindings]]
+key = "C-c C-i"
+function = "ff-find-other-file"
+description = "Switch header/source (in C/C++)"
+category = "custom"
+level = "green"
+source = "bv-c.el"
+
+[[keybindings]]
+key = "C-c C-a"
+function = "bv-c-add-header-guard"
+description = "Add header guard (in C/C++)"
+category = "custom"
+level = "green"
+source = "bv-c.el"
+
+[[keybindings]]
+key = "C-c C-m"
+function = "man"
+description = "Man page lookup (in C/C++)"
+category = "custom"
+level = "yellow"
+source = "bv-c.el"
+
+[[keybindings]]
+key = "C-c C-s"
+function = "ff-find-other-file-other-window"
+description = "Switch header/source in other window"
+category = "custom"
+level = "green"
+source = "bv-c.el"
+
+# RUST DEVELOPMENT
+[[keybindings]]
+key = "C-c C-c"
+function = "bv-rust-build"
+description = "Cargo build (in Rust mode)"
+category = "custom"
+level = "green"
+source = "bv-rust.el"
+
+[[keybindings]]
+key = "C-c C-r"
+function = "bv-rust-run"
+description = "Cargo run (in Rust mode)"
+category = "custom"
+level = "green"
+source = "bv-rust.el"
+
+[[keybindings]]
+key = "C-c C-t"
+function = "bv-rust-test"
+description = "Cargo test (in Rust mode)"
+category = "custom"
+level = "green"
+source = "bv-rust.el"
+
+[[keybindings]]
+key = "C-c C-b"
+function = "bv-rust-bench"
+description = "Cargo bench (in Rust mode)"
+category = "custom"
+level = "blue"
+source = "bv-rust.el"
+
+[[keybindings]]
+key = "C-c C-d"
+function = "bv-rust-doc"
+description = "Cargo doc (in Rust mode)"
+category = "custom"
+level = "green"
+source = "bv-rust.el"
+
+[[keybindings]]
+key = "C-c C-k"
+function = "bv-rust-check"
+description = "Cargo check (in Rust mode)"
+category = "custom"
+level = "green"
+source = "bv-rust.el"
+
+[[keybindings]]
+key = "C-c C-u"
+function = "bv-rust-update"
+description = "Cargo update (in Rust mode)"
+category = "custom"
+level = "blue"
+source = "bv-rust.el"
+
+[[keybindings]]
+key = "C-c C-f"
+function = "bv-rust-format"
+description = "Cargo fmt (in Rust mode)"
+category = "custom"
+level = "green"
+source = "bv-rust.el"
+
+[[keybindings]]
+key = "C-c C-l"
+function = "bv-rust-clippy"
+description = "Cargo clippy (in Rust mode)"
+category = "custom"
+level = "green"
+source = "bv-rust.el"
+
+[[keybindings]]
+key = "C-c C-e"
+function = "bv-rust-expand"
+description = "Cargo expand macros (in Rust mode)"
+category = "custom"
+level = "blue"
+source = "bv-rust.el"
+
+[[keybindings]]
+key = "C-c C-n"
+function = "bv-rust-new"
+description = "Cargo new project (in Rust mode)"
+category = "custom"
+level = "green"
+source = "bv-rust.el"
+
+# PYTHON DEVELOPMENT
+[[keybindings]]
+key = "C-c C-c"
+function = "python-shell-send-buffer"
+description = "Run buffer in Python shell"
+category = "custom"
+level = "green"
+source = "bv-python.el"
+
+[[keybindings]]
+key = "C-c C-r"
+function = "python-shell-send-region"
+description = "Run region in Python shell"
+category = "custom"
+level = "green"
+source = "bv-python.el"
+
+[[keybindings]]
+key = "C-c C-z"
+function = "python-shell-switch-to-shell"
+description = "Switch to Python shell"
+category = "custom"
+level = "yellow"
+source = "bv-python.el"
+
+[[keybindings]]
+key = "C-c C-p"
+function = "run-python"
+description = "Start Python interpreter"
+category = "custom"
+level = "yellow"
+source = "bv-python.el"
+
+[[keybindings]]
+key = "C-c C-v"
+function = "pyvenv-activate"
+description = "Activate virtual environment"
+category = "custom"
+level = "blue"
+source = "bv-python.el"
+
+[[keybindings]]
+key = "C-c C-d"
+function = "python-describe-at-point"
+description = "Show documentation at point"
+category = "custom"
+level = "green"
+source = "bv-python.el"
+
+[[keybindings]]
+key = "C-c C-t"
+function = "python-pytest-dispatch"
+description = "Run pytest"
+category = "custom"
+level = "green"
+source = "bv-python.el"
+
+[[keybindings]]
+key = "C-c C-i"
+function = "bv-python-insert-breakpoint"
+description = "Insert breakpoint"
+category = "custom"
+level = "green"
+source = "bv-python.el"
+
+[[keybindings]]
+key = "C-c C-f"
+function = "python-black-buffer"
+description = "Format with Black"
+category = "custom"
+level = "green"
+source = "bv-python.el"
+
+[[keybindings]]
+key = "C-c C-o"
+function = "python-sort-imports"
+description = "Sort imports with isort"
+category = "custom"
+level = "green"
+source = "bv-python.el"
+
+# LISP DEVELOPMENT
+[[keybindings]]
+key = "C-c C-c"
+function = "eval-defun"
+description = "Evaluate defun (in Lisp)"
+category = "custom"
+level = "yellow"
+source = "bv-lisp.el"
+
+[[keybindings]]
+key = "C-c C-e"
+function = "eval-last-sexp"
+description = "Evaluate last s-expression"
+category = "custom"
+level = "yellow"
+source = "bv-lisp.el"
+
+[[keybindings]]
+key = "C-c C-r"
+function = "eval-region"
+description = "Evaluate region (in Lisp)"
+category = "custom"
+level = "yellow"
+source = "bv-lisp.el"
+
+[[keybindings]]
+key = "C-c C-b"
+function = "eval-buffer"
+description = "Evaluate buffer (in Lisp)"
+category = "custom"
+level = "yellow"
+source = "bv-lisp.el"
+
+[[keybindings]]
+key = "C-c C-k"
+function = "eval-buffer"
+description = "Evaluate buffer (alternative)"
+category = "custom"
+level = "yellow"
+source = "bv-lisp.el"
+
+[[keybindings]]
+key = "C-c C-z"
+function = "ielm"
+description = "Interactive Emacs Lisp REPL"
+category = "custom"
+level = "green"
+source = "bv-lisp.el"
+
+[[keybindings]]
+key = "C-c C-d"
+function = "describe-function"
+description = "Describe function at point"
+category = "custom"
+level = "yellow"
+source = "bv-lisp.el"
+
+[[keybindings]]
+key = "C-c C-v"
+function = "describe-variable"
+description = "Describe variable at point"
+category = "custom"
+level = "yellow"
+source = "bv-lisp.el"
+
+[[keybindings]]
+key = "C-c C-m"
+function = "pp-macroexpand-last-sexp"
+description = "Macro expand last sexp"
+category = "custom"
+level = "blue"
+source = "bv-lisp.el"
+
+[[keybindings]]
+key = "C-c C-l"
+function = "load-file"
+description = "Load Elisp file"
+category = "custom"
+level = "yellow"
+source = "bv-lisp.el"
+
+[[keybindings]]
+key = "C-c C-t"
+function = "ert"
+description = "Run Emacs Lisp tests"
+category = "custom"
+level = "green"
+source = "bv-lisp.el"
+
+[[keybindings]]
+key = "C-c C-p"
+function = "check-parens"
+description = "Check parentheses balance"
+category = "custom"
+level = "yellow"
+source = "bv-lisp.el"
+
+# SLIME (Common Lisp) INTEGRATION
+[[keybindings]]
+key = "C-c s"
+function = "slime"
+description = "Start SLIME (Common Lisp)"
+category = "custom"
+level = "blue"
+source = "bv-lisp.el"
+
+[[keybindings]]
+key = "C-c q"
+function = "slime-quit-lisp"
+description = "Quit SLIME"
+category = "custom"
+level = "blue"
+source = "bv-lisp.el"
+
+[[keybindings]]
+key = "C-c C-c"
+function = "slime-compile-defun"
+description = "Compile defun (in SLIME)"
+category = "custom"
+level = "blue"
+source = "bv-lisp.el"
+
+[[keybindings]]
+key = "C-c C-k"
+function = "slime-compile-and-load-file"
+description = "Compile and load file (SLIME)"
+category = "custom"
+level = "blue"
+source = "bv-lisp.el"
+
+[[keybindings]]
+key = "C-c C-z"
+function = "slime-switch-to-output-buffer"
+description = "Switch to SLIME REPL"
+category = "custom"
+level = "blue"
+source = "bv-lisp.el"
+
+# CIDER (Clojure) INTEGRATION
+[[keybindings]]
+key = "C-c M-j"
+function = "cider-jack-in"
+description = "Start CIDER (Clojure)"
+category = "custom"
+level = "blue"
+source = "bv-lisp.el"
+
+[[keybindings]]
+key = "C-c C-k"
+function = "cider-load-buffer"
+description = "Load buffer (in CIDER)"
+category = "custom"
+level = "blue"
+source = "bv-lisp.el"
+
+[[keybindings]]
+key = "C-c C-e"
+function = "cider-eval-last-sexp"
+description = "Eval last sexp (in CIDER)"
+category = "custom"
+level = "blue"
+source = "bv-lisp.el"
+
+[[keybindings]]
+key = "C-c C-z"
+function = "cider-switch-to-repl-buffer"
+description = "Switch to CIDER REPL"
+category = "custom"
+level = "blue"
+source = "bv-lisp.el"
+
+# GEISER (Scheme) INTEGRATION
+[[keybindings]]
+key = "C-c C-z"
+function = "geiser-mode-switch-to-repl"
+description = "Switch to Geiser REPL (Scheme)"
+category = "custom"
+level = "blue"
+source = "bv-lisp.el"
+
+[[keybindings]]
+key = "C-c C-c"
+function = "geiser-eval-definition"
+description = "Eval definition (in Geiser)"
+category = "custom"
+level = "blue"
+source = "bv-lisp.el"
+
+# RAINBOW DELIMITERS
+[[keybindings]]
+key = "C-c t r"
+function = "rainbow-delimiters-mode"
+description = "Toggle rainbow delimiters"
+category = "custom"
+level = "yellow"
+source = "bv-lisp.el"
+
+# ADDITIONAL MISSING BINDINGS
+# Help System Core Bindings
+[[keybindings]]
+key = "C-h a"
+function = "apropos-command"
+description = "Search commands by pattern"
+category = "core"
+level = "yellow"
+source = "core-emacs"
+
+[[keybindings]]
+key = "C-h i"
+function = "info"
+description = "Open Info documentation browser"
+category = "core"
+level = "yellow"
+source = "core-emacs"
+
+[[keybindings]]
+key = "C-h m"
+function = "describe-mode"
+description = "Describe current major and minor modes"
+category = "core"
+level = "yellow"
+source = "core-emacs"
+
+[[keybindings]]
+key = "C-h t"
+function = "help-with-tutorial"
+description = "Open Emacs tutorial"
+category = "core"
+level = "white"
+source = "core-emacs"
+
+# Mark and Region
+[[keybindings]]
+key = "C-SPC"
+function = "set-mark-command"
+description = "Set mark at point"
+category = "editing"
+level = "white"
+source = "core-emacs"
+
+[[keybindings]]
+key = "C-x C-x"
+function = "exchange-point-and-mark"
+description = "Exchange point and mark"
+category = "editing"
+level = "yellow"
+source = "core-emacs"
+
+[[keybindings]]
+key = "M-h"
+function = "mark-paragraph"
+description = "Mark paragraph"
+category = "editing"
+level = "yellow"
+source = "core-emacs"
+
+[[keybindings]]
+key = "C-x h"
+function = "mark-whole-buffer"
+description = "Select entire buffer"
+category = "editing"
+level = "yellow"
+source = "core-emacs"
+
+# Core Text Manipulation
+[[keybindings]]
+key = "C-t"
+function = "transpose-chars"
+description = "Transpose characters"
+category = "editing"
+level = "yellow"
+source = "core-emacs"
+
+[[keybindings]]
+key = "M-t"
+function = "transpose-words"
+description = "Transpose words"
+category = "editing"
+level = "yellow"
+source = "core-emacs"
+
+# Core Commands
+[[keybindings]]
+key = "M-x"
+function = "execute-extended-command"
+description = "Execute command by name"
+category = "core"
+level = "white"
+source = "core-emacs"
+
+[[keybindings]]
+key = "M-:"
+function = "eval-expression"
+description = "Evaluate Elisp expression"
+category = "core"
+level = "green"
+source = "core-emacs"
+
+# Additional Org-mode bindings
+[[keybindings]]
+key = "C-c C-c"
+function = "org-ctrl-c-ctrl-c"
+description = "Context-sensitive command (in org-mode)"
+category = "custom"
+level = "yellow"
+source = "bv-org.el"
+
+# Perspective bindings
+[[keybindings]]
+key = "C-x x s"
+function = "persp-switch"
+description = "Switch perspective"
+category = "window"
+level = "blue"
+source = "bv-navigation.el"
+
+[[keybindings]]
+key = "C-x x n"
+function = "persp-next"
+description = "Next perspective"
+category = "window"
+level = "blue"
+source = "bv-navigation.el"
+
+[[keybindings]]
+key = "C-x x p"
+function = "persp-prev"
+description = "Previous perspective"
+category = "window"
+level = "blue"
+source = "bv-navigation.el"
+
+# PRODUCTIVITY TOOLS
+# Calculator
+[[keybindings]]
+key = "C-c k"
+function = "calc-dispatch"
+description = "Advanced calculator dispatch"
+category = "custom"
+level = "green"
+source = "bv-productivity.el"
+
+# Notifications
+[[keybindings]]
+key = "C-c n"
+function = "bv-ednc-map"
+description = "Desktop notifications prefix map"
+category = "custom"
+level = "blue"
+source = "bv-productivity.el"
+
+[[keybindings]]
+key = "C-c n n"
+function = "ednc-pop-to-notification-in-log-buffer"
+description = "View notification in log"
+category = "custom"
+level = "blue"
+source = "bv-productivity.el"
+
+[[keybindings]]
+key = "C-c n l"
+function = "bv-ednc-show-notification-log"
+description = "Show notification log"
+category = "custom"
+level = "blue"
+source = "bv-productivity.el"
+
+[[keybindings]]
+key = "C-c n d"
+function = "ednc-dismiss-notification"
+description = "Dismiss notification"
+category = "custom"
+level = "blue"
+source = "bv-productivity.el"
+
+[[keybindings]]
+key = "C-c n D"
+function = "bv-ednc-dismiss-all-notifications"
+description = "Dismiss all notifications"
+category = "custom"
+level = "blue"
+source = "bv-productivity.el"
+
+# Pomodoro
+[[keybindings]]
+key = "C-c p p"
+function = "pomidor"
+description = "🍅 Start Pomodoro timer"
+category = "custom"
+level = "green"
+source = "bv-productivity.el"
+
+[[keybindings]]
+key = "C-c p o"
+function = "org-pomodoro"
+description = "Org-integrated Pomodoro (in org-mode)"
+category = "custom"
+level = "green"
+source = "bv-productivity.el"
+
+# Pomidor mode bindings
+[[keybindings]]
+key = "q"
+function = "quit-window"
+description = "Quit (in pomidor mode)"
+category = "custom"
+level = "yellow"
+source = "bv-productivity.el"
+
+[[keybindings]]
+key = "Q"
+function = "pomidor-quit"
+description = "Quit pomidor (in pomidor mode)"
+category = "custom"
+level = "yellow"
+source = "bv-productivity.el"
+
+[[keybindings]]
+key = "R"
+function = "pomidor-reset"
+description = "Reset timer (in pomidor mode)"
+category = "custom"
+level = "yellow"
+source = "bv-productivity.el"
+
+[[keybindings]]
+key = "SPC"
+function = "pomidor-break"
+description = "Start break (in pomidor mode)"
+category = "custom"
+level = "yellow"
+source = "bv-productivity.el"
+
+[[keybindings]]
+key = "RET"
+function = "pomidor-stop"
+description = "Stop timer (in pomidor mode)"
+category = "custom"
+level = "yellow"
+source = "bv-productivity.el"
+
+# Time Tracking
+[[keybindings]]
+key = "C-c t i"
+function = "org-clock-in"
+description = "Clock in to task"
+category = "custom"
+level = "green"
+source = "bv-productivity.el"
+
+[[keybindings]]
+key = "C-c t o"
+function = "org-clock-out"
+description = "Clock out of task"
+category = "custom"
+level = "green"
+source = "bv-productivity.el"
+
+[[keybindings]]
+key = "C-c t c"
+function = "org-clock-in-last"
+description = "Clock in to last task"
+category = "custom"
+level = "green"
+source = "bv-productivity.el"
+
+[[keybindings]]
+key = "C-c t g"
+function = "org-clock-goto"
+description = "Go to clocked task"
+category = "custom"
+level = "green"
+source = "bv-productivity.el"
+
+[[keybindings]]
+key = "C-c t d"
+function = "org-clock-display"
+description = "Display time spent"
+category = "custom"
+level = "green"
+source = "bv-productivity.el"
+
+[[keybindings]]
+key = "C-c t r"
+function = "org-clock-report"
+description = "Generate time report"
+category = "custom"
+level = "green"
+source = "bv-productivity.el"
+
+[[keybindings]]
+key = "C-c t e"
+function = "org-clock-modify-effort-estimate"
+description = "Modify effort estimate"
+category = "custom"
+level = "green"
+source = "bv-productivity.el"
+
+[[keybindings]]
+key = "C-c t t"
+function = "chronos-add-timer"
+description = "Add simple timer"
+category = "custom"
+level = "yellow"
+source = "bv-productivity.el"
+
+[[keybindings]]
+key = "C-c t l"
+function = "chronos-list"
+description = "List active timers"
+category = "custom"
+level = "yellow"
+source = "bv-productivity.el"
+
+# Productivity Main Map
+[[keybindings]]
+key = "C-c a P"
+function = "bv-productivity-map"
+description = "Productivity tools prefix map"
+category = "custom"
+level = "green"
+source = "bv-productivity.el"
+
+[[keybindings]]
+key = "C-c a P P"
+function = "bv-productivity-hydra/body"
+description = "🚀 Productivity hydra menu"
+category = "custom"
+level = "blue"
+source = "bv-productivity.el"
+
+[[keybindings]]
+key = "C-c a P g"
+function = "gptel"
+description = "🤖 GPT interface"
+category = "custom"
+level = "blue"
+source = "bv-productivity.el"
+
+[[keybindings]]
+key = "C-c a P c"
+function = "calc"
+description = "Advanced calculator"
+category = "custom"
+level = "green"
+source = "bv-productivity.el"
+
+[[keybindings]]
+key = "C-c a P p"
+function = "pomidor"
+description = "Pomodoro timer"
+category = "custom"
+level = "green"
+source = "bv-productivity.el"
+
+[[keybindings]]
+key = "C-c a P i"
+function = "org-clock-in"
+description = "Clock in"
+category = "custom"
+level = "green"
+source = "bv-productivity.el"
+
+[[keybindings]]
+key = "C-c a P o"
+function = "org-clock-out"
+description = "Clock out"
+category = "custom"
+level = "green"
+source = "bv-productivity.el"
+
+[[keybindings]]
+key = "C-c a P n"
+function = "bv-productivity-quick-note"
+description = "Quick note capture"
+category = "custom"
+level = "green"
+source = "bv-productivity.el"
+
+[[keybindings]]
+key = "C-c a P f"
+function = "bv-productivity-focus-mode"
+description = "Enter focus mode"
+category = "custom"
+level = "green"
+source = "bv-productivity.el"
+
+[[keybindings]]
+key = "C-c a P t"
+function = "chronos-add-timer"
+description = "Add timer"
+category = "custom"
+level = "yellow"
+source = "bv-productivity.el"
+
+# MULTIMEDIA
+# EMMS
+[[keybindings]]
+key = "C-c e e"
+function = "emms"
+description = "🎵 Start EMMS media player"
+category = "custom"
+level = "green"
+source = "bv-multimedia.el"
+
+[[keybindings]]
+key = "C-c e b"
+function = "emms-smart-browse"
+description = "Browse media library"
+category = "custom"
+level = "green"
+source = "bv-multimedia.el"
+
+[[keybindings]]
+key = "C-c e l"
+function = "emms-playlist-mode-go"
+description = "Go to playlist"
+category = "custom"
+level = "green"
+source = "bv-multimedia.el"
+
+[[keybindings]]
+key = "C-c e s"
+function = "emms-start"
+description = "Start playback"
+category = "custom"
+level = "yellow"
+source = "bv-multimedia.el"
+
+[[keybindings]]
+key = "C-c e S"
+function = "emms-stop"
+description = "Stop playback"
+category = "custom"
+level = "yellow"
+source = "bv-multimedia.el"
+
+[[keybindings]]
+key = "C-c e n"
+function = "emms-next"
+description = "Next track"
+category = "custom"
+level = "yellow"
+source = "bv-multimedia.el"
+
+[[keybindings]]
+key = "C-c e p"
+function = "emms-previous"
+description = "Previous track"
+category = "custom"
+level = "yellow"
+source = "bv-multimedia.el"
+
+[[keybindings]]
+key = "C-c e P"
+function = "emms-pause"
+description = "Pause/resume playback"
+category = "custom"
+level = "yellow"
+source = "bv-multimedia.el"
+
+# Multimedia Map
+[[keybindings]]
+key = "C-c a M"
+function = "bv-multimedia-map"
+description = "Multimedia tools prefix map"
+category = "custom"
+level = "green"
+source = "bv-multimedia.el"
+
+[[keybindings]]
+key = "C-c a M m"
+function = "bv-multimedia-hydra/body"
+description = "🎵 Media control hydra"
+category = "custom"
+level = "blue"
+source = "bv-multimedia.el"
+
+[[keybindings]]
+key = "C-c a M o"
+function = "bv-multimedia-open-externally"
+description = "Open with external app"
+category = "custom"
+level = "green"
+source = "bv-multimedia.el"
+
+[[keybindings]]
+key = "C-c a M u"
+function = "bv-multimedia-play-url"
+description = "Play URL with mpv"
+category = "custom"
+level = "green"
+source = "bv-multimedia.el"
+
+[[keybindings]]
+key = "C-c a M s"
+function = "bv-multimedia-screenshot"
+description = "📸 Take screenshot"
+category = "custom"
+level = "green"
+source = "bv-multimedia.el"
+
+# COMMUNICATION
+# Webpaste direct bindings
+[[keybindings]]
+key = "C-c C-w p"
+function = "webpaste-paste-region-or-buffer"
+description = "Paste region/buffer to web"
+category = "custom"
+level = "green"
+source = "bv-communication.el"
+
+[[keybindings]]
+key = "C-c C-w r"
+function = "webpaste-paste-region"
+description = "Paste region to web"
+category = "custom"
+level = "green"
+source = "bv-communication.el"
+
+[[keybindings]]
+key = "C-c C-w b"
+function = "webpaste-paste-buffer"
+description = "Paste buffer to web"
+category = "custom"
+level = "green"
+source = "bv-communication.el"
+
+# Webpaste Map
+[[keybindings]]
+key = "C-c a W"
+function = "bv-webpaste-map"
+description = "Code sharing prefix map"
+category = "custom"
+level = "green"
+source = "bv-communication.el"
+
+[[keybindings]]
+key = "C-c a W p"
+function = "webpaste-paste-region-or-buffer"
+description = "📋 Share code online"
+category = "custom"
+level = "green"
+source = "bv-communication.el"
+
+[[keybindings]]
+key = "C-c a W r"
+function = "webpaste-paste-region"
+description = "Share region online"
+category = "custom"
+level = "green"
+source = "bv-communication.el"
+
+[[keybindings]]
+key = "C-c a W b"
+function = "webpaste-paste-buffer"
+description = "Share buffer online"
+category = "custom"
+level = "green"
+source = "bv-communication.el"
+
+[[keybindings]]
+key = "C-c a W l"
+function = "bv-communication-yank-code-link"
+description = "Copy code link to clipboard"
+category = "custom"
+level = "green"
+source = "bv-communication.el"
+
+[[keybindings]]
+key = "C-c a W s"
+function = "bv-communication-share-snippet"
+description = "Share snippet with context"
+category = "custom"
+level = "green"
+source = "bv-communication.el"
